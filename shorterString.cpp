@@ -29,5 +29,4 @@ int main()
     }
 
     cout << a << endl << b << endl;
-    ;
 }
