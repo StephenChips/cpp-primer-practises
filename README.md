@@ -1,2 +1,2 @@
 # cpp-primer-practises
-A repo that stores my exercise codes of *C++ Primer*. Probably it makes no uses to you.
+A repo that stores my exercise codes of *C++ Primer*, which probably is useless to you.
