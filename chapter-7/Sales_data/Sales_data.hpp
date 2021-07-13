@@ -17,6 +17,7 @@ public:
     Sales_data() = default;
     Sales_data(const std::string &s, unsigned n, double p) : bookNo(s), units_sold(n), revenue(p * n) {}
     Sales_data(const std::string &s) : bookNo(s) {}
+    Sales_data(const char *cstr): bookNo(std::string(cstr)) {};
     Sales_data(std::istream &);
     double avg_price() const;
     std::string isbn() const { return bookNo; }

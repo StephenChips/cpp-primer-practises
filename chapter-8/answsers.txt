@@ -1,0 +1,2 @@
+## Question 8.3
+当`cin`状态为fail、bad或eof时退出

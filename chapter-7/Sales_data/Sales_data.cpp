@@ -15,7 +15,7 @@ Sales_data &Sales_data::combine(const Sales_data &rhs)
     return *this;
 }
 
-double Sales_data::avg_price() const
+inline double Sales_data::avg_price() const
 {
     return units_sold ? revenue / units_sold : 0;
 };

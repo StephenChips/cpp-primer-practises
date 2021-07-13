@@ -20,5 +20,7 @@ int main() {
         cerr << "No data?!" << endl;
     }
 
+    total.combine(std::string("aaa"));
+
     return 0;
 }

@@ -39,7 +39,5 @@ int main()
 {
     Person ba("ba", "adce");
     std::cout << ba.getAddress() << " " << ba.getName() << std::endl;
-
-
     return 0;
 }
