@@ -1,24 +1,36 @@
 #include <cstring>
 #include <algorithm>
+#include <iostream>
+#include <vector>
 
-class string {
-    private:
-    char *data;
+using namespace std;
 
-    public:
-        string(const char *p) {
-            size_t size = std::strlen(p) + 1;
-            this->data = new char[size];
-            std::memcpy(data, p, size);
-        }
+struct Vec {
+    int a = 3;
 
-        ~string() {
-            delete[] data;
-        }
+    Vec() = default;
 
-        string(const string& that) {
-            size_t size = std::strlen(that.data) + 1;
-            this->data = new char[size];
-            std::memcpy(data, that.data, size);
-        }
+    Vec(const Vec& v) {
+        cout << "Called copy constructor" << endl;
+        a = v.a;
+    }
+
+    Vec(const Vec&& v) {
+        cout << "Called move constructor" << endl;
+        a = v.a;
+    }
 };
+
+Vec f();
+Vec f() {
+    Vec a;
+
+    a.a = 10000;
+    return a;
+}
+
+
+int main() {
+    cout <<  f().a << endl;
+    return 0;
+}
