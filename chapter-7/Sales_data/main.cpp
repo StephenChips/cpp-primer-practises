@@ -13,7 +13,8 @@ int main() {
             if (total.isbn() == trans.isbn()) {
                 total.combine(trans);
             } else {
-                print(cout, total) << endl << "======" << endl;
+                print(cout, total) << endl;
+                total = trans;
             }
         }
     } else {

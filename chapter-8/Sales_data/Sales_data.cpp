@@ -22,14 +22,24 @@ inline double Sales_data::avg_price() const
 
 std::istream &read(std::istream &is, Sales_data &s)
 {
-    return is >> s.bookNo >> s.units_sold >> s.revenue;
+    std::string bookNo;
+    unsigned units_sold;
+    double revenue;
+
+    is >> bookNo >> units_sold >> revenue;
+
+    s.bookNo = bookNo;
+    s.units_sold = units_sold;
+    s.revenue = revenue;
+
+    return is;
 }
 
 std::ostream &print(std::ostream &os, const Sales_data &s)
 {
-    cout << "boolNo: " << s.bookNo << endl;
-    cout << "units_sold: " << s.units_sold << endl;
-    cout << "revenue :" << s.revenue << endl;
+    os << "boolNo: " << s.bookNo << endl;
+    os << "units_sold: " << s.units_sold << endl;
+    os << "revenue :" << s.revenue << endl;
     return os;
 }
 
