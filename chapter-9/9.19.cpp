@@ -1,17 +1,17 @@
 #include <iostream>
-#include <deque>
+#include <list>
 #include <string>
 
 int main()
 {
-    std::deque<std::string> strDeque;
+    std::list<std::string> strList;
     std::string s;
     while (std::cin >> s)
     {
-        strDeque.insert(strDeque.end(), s);
+        strList.insert(strList.end(), s);
     }
 
-    for (auto str : strDeque)
+    for (auto str : strList)
     {
         std::cout << str << std::endl;
     }
