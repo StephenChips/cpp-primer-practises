@@ -18,8 +18,7 @@ int main()
         {
             bi++;
         }
-    }   
-
+    }
 
     for (auto i : list) {
         std::cout << i << " ";
