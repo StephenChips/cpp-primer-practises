@@ -14,7 +14,7 @@ string add_prefix_and_suffix(const string &name, const string &prefix, const str
 
 int main()
 {
-    std::string str("Holly Moly");
+    std::string str("Holy Moly");
 
     cout << add_prefix_and_suffix(str, "Mr. ", " Jr. ") << endl;
 

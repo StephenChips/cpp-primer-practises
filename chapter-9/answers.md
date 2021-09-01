@@ -106,3 +106,11 @@ type must have a default constructor.
 
 Use the member function `reserve` to allocation enough space in advance.
 
+## 9.48
+
+It will return `string::npos`.
+
+
+## 9.50
+
+**Note:** The string to convert should start with digits.
